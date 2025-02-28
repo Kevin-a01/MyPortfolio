@@ -15,8 +15,6 @@ export const LoadingScreen = ( {onComplete} ) => {
         clearInterval(interval)
 
         setTimeout(() => {
-          console.log("onComplete körs");
-          
           onComplete();
         }, 2000);
       }
