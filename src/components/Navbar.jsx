@@ -13,7 +13,7 @@ function Navbar({menuOpen, setMenuOpen}){
 
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <a className={`font-mono text-2xl font-bold text-white transitionn-opacity duration-300 ${menuOpen ? "opacity-35" : "opacity-100"}`} href="#home">Port<span className="text-purple-500">Folio.</span></a>
+          <a className={`font-mono text-2xl font-bold md:text-3xl text-white transitionn-opacity duration-300 ${menuOpen ? "opacity-35" : "opacity-100"}`} href="#home">Port<span className="text-purple-500">Folio.</span></a>
           {!menuOpen && (
             <div className="w-7 h-7 relative cursor-pointer text-xl z-40 md:hidden" onClick={() => setMenuOpen((prev) => !prev)}>
             &#9776;
@@ -22,13 +22,13 @@ function Navbar({menuOpen, setMenuOpen}){
           
 
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-purple-500 hover:text-white transition-colors">Home</a>
+            <a href="#home" className="text-red-500 hover:text-white transition-colors">Home</a>
 
-            <a href="#about" className="text-purple-500 hover:text-white transition-colors">About</a>
+            <a href="#about" className="text-red-500 hover:text-white transition-colors">About</a>
             
-            <a href="#projects" className="text-purple-500 hover:text-white transition-colors">Projects</a>
+            <a href="#projects" className="text-red-500 hover:text-white transition-colors">Projects</a>
 
-            <a href="#contact" className="text-purple-500 hover:text-white transition-colors">Contact</a>
+            <a href="#contact" className="text-red-500 hover:text-white transition-colors">Contact</a>
 
             
 
