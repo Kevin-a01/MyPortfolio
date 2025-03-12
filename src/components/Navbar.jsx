@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Home from "./sections/Home";
 
 function Navbar({menuOpen, setMenuOpen}){
 
@@ -7,6 +8,25 @@ function Navbar({menuOpen, setMenuOpen}){
     document.body.style.overflow = menuOpen ? "hidden" : ""
 
   },[menuOpen])
+
+  const language = navigator.language.startsWith('sv') ? 'sv' : 'en'
+
+  const texts = {
+    sv: {
+      home: "Hem",
+      about: "Om mig",
+      projects: "Projekt",
+      contact: "Kontakt"
+    },
+    en: {
+      home: "Home",
+      about: "About me",
+      projects: "Projects",
+      contact: "Contact"
+    }
+  };
+
+  const t = texts[language]
 
   return(
     <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b-white/10 shadow-lg">
@@ -22,13 +42,13 @@ function Navbar({menuOpen, setMenuOpen}){
           
 
           <div className="hidden md:flex items-center space-x-8 text-purple-500">
-            <a href="#home" className="hover:text-white transition-colors">Home</a>
+            <a href="#home" className="hover:text-white transition-colors">{t.home}</a>
 
-            <a href="#about" className="hover:text-white transition-colors">About</a>
+            <a href="#about" className="hover:text-white transition-colors">{t.about}</a>
             
-            <a href="#projects" className="hover:text-white transition-colors">Projects</a>
+            <a href="#projects" className="hover:text-white transition-colors">{t.projects}</a>
 
-            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
+            <a href="#contact" className="hover:text-white transition-colors">{t.contact}</a>
 
             
 

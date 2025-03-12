@@ -1,6 +1,26 @@
 import RevealOnScroll from "../RevealOnScroll";
 
 function About({menuOpen}){
+  const language = navigator.language.startsWith('sv') ? 'sv' : 'en'
+
+  const texts = {
+    sv: {
+      aboutMeText: "Om mig",
+      aboutMe: "Jag är en passionerad lärande individ som älskar att ständigt utöka mina kunskaper inom fullstack-utveckling. Jag gillar att utforska nya teknologier, och att förbättra mina färdigheter är en stark drivkraft för mig både som student och utvecklare.",
+      education: "Utbildning",
+      school: "Front-end utveckling - EC Utbildning (2024-Nuvarande)",
+      api: "REST API-utveckling"
+    },
+    en: {
+      aboutMeText: "About me",
+      aboutMe: "I'm a passionate learner that loves to continuosly expand my knowledge in full-stack development. I enjoy exploring new technologies, and improving my skills is a strong motivation for me as both a student and a developer.",
+      education: "Education",
+      school: "Front-end development - EC Utbildning (2024-Present)",
+      api: "REST API-development"
+    }
+  }
+
+  const t = texts[language]
 
   const frontendSkills =[
     "HTML",
@@ -8,27 +28,24 @@ function About({menuOpen}){
     "CSS",
     "TailwindCSS",
     "React",
-    "Still learning"
   ]
 
   const backendSkills =[
     "ExpressJS",
     "Sqlite3",
     "Node.js",
-    "REST API-development",
-    "Still learning"
-    
+    `${t.api}`
   ]
   
   return(
     <section id="about" className={`min-h-screen flex items-center justify-center py-20 transition-all duration-500 ${menuOpen ? "opacity-10" : "opacity-100"}`}>
   <RevealOnScroll>
       <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-l from-red-500 to-purple-600 bg-clip-text text-transparent  text-center">About Me</h2>
+        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-l from-red-500 to-purple-600 bg-clip-text text-transparent  text-center">{t.aboutMeText}</h2>
 
         <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
           <p className="text-gray-300 mb-6">
-            I'm a passionate learner that loves to keep learning and keep buildning up my knowledge  in Fullstack-Development. I love to explore and learn new technologies and improving my skills is a big motivation for me as a student and a developer.
+            {t.aboutMe}
           </p>
           </div>
 
@@ -66,11 +83,11 @@ function About({menuOpen}){
 
         <div className="grid grid-cols-1 md:w-full gap-6 mt-8">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-2xl font-bold mb-4 text-center"> 🎓 Education</h3>
+              <h3 className="text-2xl font-bold mb-4 text-center"> 🎓 {t.education}</h3>
                 <ul className="text-center">
                   <li>
-                     <strong>Frontend-Developer-Student - EC Utbildning </strong> 
-                    (2024-Present)
+                     <strong>{t.school}</strong> 
+                    
                   </li>
                 </ul>
               </div>
