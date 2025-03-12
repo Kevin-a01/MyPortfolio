@@ -1,3 +1,5 @@
+import RevealOnScroll from "../RevealOnScroll";
+
 function About({menuOpen}){
 
   const frontendSkills =[
@@ -20,7 +22,7 @@ function About({menuOpen}){
   
   return(
     <section id="about" className={`min-h-screen flex items-center justify-center py-20 transition-all duration-500 ${menuOpen ? "opacity-10" : "opacity-100"}`}>
-
+  <RevealOnScroll>
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 bg-gradient-to-l from-red-500 to-purple-600 bg-clip-text text-transparent  text-center">About Me</h2>
 
@@ -74,7 +76,7 @@ function About({menuOpen}){
               </div>
           </div>
       </div>
-
+  </RevealOnScroll>
 
       
     </section>
