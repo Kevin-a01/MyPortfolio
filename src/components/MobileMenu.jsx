@@ -8,6 +8,25 @@ function MobileMenu({menuOpen, setMenuOpen}){
 
   }, [menuOpen]);
 
+  const language = navigator.language.startsWith('sv') ? 'sv' : 'en'
+
+  const texts = {
+    sv: {
+      home: "Hem",
+      about: "Om mig",
+      projects: "Projekt",
+      contact: "Kontakt"
+    },
+    en: {
+      home: "Home",
+      about: "About me",
+      projects: "Projects",
+      contact: "Contact"
+    }
+  };
+
+  const t = texts[language]
+
   return(
     <div className={`fixed top-0 left-0 w-full bg-[10, 10, 10, 0.8] z-40 flex flex-col items-center justify-center transition-all duration-300 ease-in-out ${menuOpen ? "h-screen opacity-100 pointer-events-auto" : "h-0 opacity-0 pointer-events-none"}`}>
 
@@ -16,13 +35,13 @@ function MobileMenu({menuOpen, setMenuOpen}){
         &times;
       </button>
 
-            <a href="#home" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold text-purple-500 my-4 transform transition-transform duration-300 ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>Home</a>
+            <a href="#home" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold my-4 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent transform transition-transform duration-300 hover:scale-150 ease-in ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>{t.home}</a>
 
-            <a href="#about" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold text-purple-500 my-4 transform transition-transform duration-300 ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>About</a>
+            <a href="#about" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent my-4 transform transition-transform duration-300 hover:scale-150 ease-in  ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>{t.about}</a>
             
-            <a href="#projects" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold text-purple-500 my-4 transform transition-transform duration-300 ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>Projects</a>
+            <a href="#projects" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent my-4 transform transition-transform duration-300 hover:scale-150 ease-in ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>{t.projects}</a>
 
-            <a href="#contact" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold text-purple-500 my-4 transform transition-transform duration-300 ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>Contact</a>
+            <a href="#contact" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent my-4 transform transition-transform duration-300 hover:scale-150 ease-in ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>{t.contact}</a>
 
     </div>
   )
