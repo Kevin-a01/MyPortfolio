@@ -8,6 +8,7 @@ import About from "./components/sections/About"
 import Projects from "./components/sections/Projects"
 import Contact from "./components/sections/Contact"
 import Footer from "./components/sections/Footer"
+import { Resume } from "./components/sections/Resume"
 
 
 function App() {
@@ -25,7 +26,9 @@ function App() {
         <Home menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <About menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <Projects menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+         <Resume menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <Contact menuOpen={menuOpen} setMenuOpen={setMenuOpen}/> 
+       
         <Footer/>
       </div>
       

@@ -28,6 +28,7 @@ function About({menuOpen}){
     "CSS",
     "TailwindCSS",
     "React",
+    "Angular"
   ]
 
   const backendSkills =[

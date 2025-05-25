@@ -14,7 +14,7 @@ function Projects({menuOpen}){
         projectDescription2: "Det här är ett e-handelsgrupprojekt som jag arbetade med tillsammans med några klasskamrater, där vi byggde en smyckeswebbplats för en kurs som fokuserade på agila projektmetoder och UX/UI-design. Vi lärde oss hur man samarbetar i team och skapar wireframes för webbplatsen.",
         projectDescription3: "Detta är ett hobbyprojekt jag utvecklat för Pawsisters, en Artist Alley-butik. Det är en säljtracker som låter användaren registrera event, produkter, priser och betalningsmetoder. Försäljningen presenteras i en tabell, och vid dagens slut kan datan sparas för framtida analys. Användaren kan även filtrera försäljningen baserat på betalningsmetod för bättre översikt.",
         viewProject: "Se Projekt",
-        viewDemo: "Se Produktions Demo"
+        viewDemo: "Se Produktions Sida"
     },
 
     en: {
@@ -25,7 +25,7 @@ function Projects({menuOpen}){
         projectDescription2: "This is an e-commerce group project I worked on with classmates, building a jewelry website for a course focused on Agile project methods and UX/UI design. We learned how to collaborate as a team and create wireframes for the website.",
         projectDescription3: "This is a hobby project I developed for Pawsisters, an Artist Alley shop. It is a sales tracker that allows users to log events, products, prices, and payment methods. Sales data is displayed in a table, and at the end of the day, transactions can be stored for future analysis. Users can also filter sales by payment method for better insights.",
         viewProject: "View Project",
-        viewDemo: "View Production Demo"
+        viewDemo: "View Production Site"
 
     }
     };
@@ -99,10 +99,6 @@ function Projects({menuOpen}){
                 <div className="flex gap-9">
                     <div className="flex justify-between items-center">
                         <a href="https://github.com/Kevin-a01/Pawsisters_sales_tracker" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 pt-5">{t.viewProject}</a>
-                    </div>
-
-                    <div className="flex justify-between items-center">
-                        <a href="https://pawsisters-sales-production.up.railway.app/" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 pt-5">{t.viewDemo}</a>
                     </div>
                 </div>    
 

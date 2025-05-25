@@ -16,13 +16,16 @@ function Navbar({menuOpen, setMenuOpen}){
       home: "Hem",
       about: "Om mig",
       projects: "Projekt",
-      contact: "Kontakt"
+      contact: "Kontakt",
+      resume: "Mitt CV"
+
     },
     en: {
       home: "Home",
       about: "About me",
       projects: "Projects",
-      contact: "Contact"
+      contact: "Contact",
+      resume: "Resume"
     }
   };
 
@@ -49,6 +52,8 @@ function Navbar({menuOpen, setMenuOpen}){
             <a href="#projects" className="hover:text-white transition-colors">{t.projects}</a>
 
             <a href="#contact" className="hover:text-white transition-colors">{t.contact}</a>
+
+             <a href="#resume" className="hover:text-white transition-colors">{t.resume}</a>
 
             
 
