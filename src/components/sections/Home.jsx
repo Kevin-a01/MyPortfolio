@@ -32,7 +32,7 @@ function Home({menuOpen}) {
     <RevealOnScroll>
       <div className={`text-center z-10 px-4`}>
         <h1 className="text-4xl md:text-6xl font-bold mb-6
-        bg-gradient-to-r from-red-500 to bg-purple-600  leading-right bg-clip-text text-transparent">{t.greeting}</h1>
+        bg-gradient-to-r from-red-500 to bg-purple-600  leading-right bg-clip-text text-transparent pb-3">{t.greeting}</h1>
 
         <p className={`text-gray-400 text-lg mb-8 max-w-lg mx-auto md:text-xl`}>
           {t.description}

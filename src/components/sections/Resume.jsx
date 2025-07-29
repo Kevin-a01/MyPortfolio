@@ -31,7 +31,7 @@ export function Resume({menuOpen}){
         <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
           <h1 className="text-3xl text-center">{t.resumeTitle}</h1>
           <h2 className="text-xl text-center mt-5 text-gray-400">{t.resumeDescription}</h2>
-          <a href="https://drive.google.com/file/d/10a5fb5XJoKB8t3ThEOm30u7j4augj3UP/view?usp=drive_link" target="blank" className="flex justify-center mt-5 text-xl hover:text-red-400 text-red-500" >{t.resumeLink}</a>
+          <a href="https://drive.google.com/file/d/1VDN2OQOmUg0tNqIetnB6imZUo8pxzT8J/view" target="blank" className="flex justify-center mt-5 text-xl hover:text-red-400 text-red-500" >{t.resumeLink}</a>
           
         </div>
         
