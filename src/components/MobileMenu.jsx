@@ -37,15 +37,15 @@ function MobileMenu({menuOpen, setMenuOpen}){
         &times;
       </button>
 
-            <a href="#home" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold my-4 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent transform transition-transform duration-300 hover:scale-150 ease-in ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>{t.home}</a>
+            <a href="#home" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold my-4 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent transform transition-transform duration-300 hover:scale-130 ease-in ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>{t.home}</a>
 
-            <a href="#about" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent my-4 transform transition-transform duration-300 hover:scale-150 ease-in  ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>{t.about}</a>
+            <a href="#about" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent my-4 transform transition-transform duration-300 hover:scale-130 ease-in  ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>{t.about}</a>
             
-            <a href="#projects" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent my-4 transform transition-transform duration-300 hover:scale-150 ease-in ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>{t.projects}</a>
+            <a href="#projects" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent my-4 transform transition-transform duration-300 hover:scale-130 ease-in ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>{t.projects}</a>
 
-            <a href="#contact" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent my-4 transform transition-transform duration-300 hover:scale-150 ease-in ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>{t.contact}</a>
+            <a href="#contact" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent my-4 transform transition-transform duration-300 hover:scale-130 ease-in ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>{t.contact}</a>
 
-            <a href="#resume" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent my-4 transform transition-transform duration-300 hover:scale-150 ease-in ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>{t.resume}</a>
+            <a href="#resume" onClick={() => setMenuOpen(false)} className={`text-2xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent my-4 transform transition-transform duration-300 hover:scale-130 ease-in ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>{t.resume}</a>
 
     </div>
   )

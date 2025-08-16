@@ -1,7 +1,7 @@
 function Footer() {
 
   return(
-    <div className="text-4xl  flex justify-center items-center gap-10 pb-3">
+    <div className="text-4xl md:text-5xl  flex justify-center items-center gap-10 pb-3">
       <a href="https://github.com/Kevin-a01" target="blank">
       <i class="fa-brands fa-github"></i>
       </a>

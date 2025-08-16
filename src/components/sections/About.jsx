@@ -5,18 +5,22 @@ function About({menuOpen}){
 
   const texts = {
     sv: {
+      learning:"Lär mig fortfarande nya saker om dessa kodnings språk för varje dag!",
       aboutMeText: "Om mig",
       aboutMe: "Jag är en passionerad lärande individ som älskar att ständigt utöka mina kunskaper inom fullstack-utveckling. Jag gillar att utforska nya teknologier, och att förbättra mina färdigheter är en stark drivkraft för mig både som student och utvecklare.",
       education: "Utbildning",
       school: "Front-end utveckling - EC Utbildning (2024-Nuvarande)",
       api: "REST API-utveckling"
+      
     },
     en: {
+      learning: "I am still learning new things about these coding languages everyday!",
       aboutMeText: "About me",
       aboutMe: "I'm a passionate learner that loves to continuosly expand my knowledge in full-stack development. I enjoy exploring new technologies, and improving my skills is a strong motivation for me as both a student and a developer.",
       education: "Education",
       school: "Front-end development - EC Utbildning (2024-Present)",
       api: "REST API-development"
+      
     }
   }
 
@@ -28,14 +32,16 @@ function About({menuOpen}){
     "CSS",
     "TailwindCSS",
     "React",
-    "Angular"
+    "Angular",
+    "Next.js"
   ]
 
   const backendSkills =[
     "ExpressJS",
     "Sqlite3",
     "Node.js",
-    `${t.api}`
+    `${t.api}`,
+    "Next.js"
   ]
   
   return(
@@ -52,9 +58,12 @@ function About({menuOpen}){
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
           <div className="rounded-lg p-6 hover:translate-y-1 transition-all ">
-            <h3 className="text-xl font-bold mb-4">
+            <h3 className="text-xl font-bold mb-2">
               Frontend
             </h3>
+            <h4 className="text-sm mb-5 font-medium ">
+              {t.learning}
+            </h4>
             <div className="flex flex-wrap gap-2">
               {frontendSkills.map((tech, key) => (
                 <span key={key} className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
