@@ -35,7 +35,12 @@ export function Resume({menuOpen}){
           <h1 className="text-2xl text-center md:text-3xl">{t.resumeTitle}</h1>
           <h2 className="text-lg mb-4 md:text-xl text-center mt-5 text-gray-400">{t.resumeDescription}</h2>
           <img onClick={() => setIsZoomed(!isZoomed)} src="/MyPortfolio/CV.png" alt="" className={`w-full h-1/2 mx-auto transition-transform duration-300 rounded-2xl ${isZoomed ? "scale-120 md:scale-135 " : "scale-100"}`} />
-          <a href="https://drive.google.com/file/d/1VDN2OQOmUg0tNqIetnB6imZUo8pxzT8J/view" target="blank" className="flex justify-center mt-5 text-xl hover:text-red-400 text-gray-400">{t.resumeLink}</a>
+          <a href="/MyPortfolio/kevin_andersson_lia_cv.pdf" download 
+          className="flex justify-center mt-5 text-xl hover:text-red-400 text-gray-400">
+            <button>
+                {t.resumeLink}
+            </button>
+            </a>
           
         </div>
         
