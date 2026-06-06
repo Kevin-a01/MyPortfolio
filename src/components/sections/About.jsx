@@ -5,23 +5,19 @@ function About({ menuOpen }) {
 
   const texts = {
     sv: {
-      learning:
-        "Lär mig fortfarande nya saker om dessa kodnings språk för varje dag!",
       aboutMeText: "Om mig",
       aboutMe:
         "Jag är en passionerad lärande individ som älskar att ständigt utöka mina kunskaper inom fullstack-utveckling. Jag gillar att utforska nya teknologier, och att förbättra mina färdigheter är en stark drivkraft för mig både som student och utvecklare.",
       education: "Utbildning",
-      school: "Front-end utveckling - EC Utbildning (2024-Nuvarande)",
+      school: "Front-end utveckling - EC Utbildning (Augusti 2024 - Juni 2026)",
       api: "REST API-utveckling",
     },
     en: {
-      learning:
-        "I am still learning new things about these coding languages everyday!",
       aboutMeText: "About me",
       aboutMe:
         "I'm a passionate learner that loves to continuosly expand my knowledge in full-stack development. I enjoy exploring new technologies, and improving my skills is a strong motivation for me as both a student and a developer.",
       education: "Education",
-      school: "Front-end development - EC Utbildning (2024-Present)",
+      school: "Front-end development - EC Utbildning (August 2024 - June 2026)",
       api: "REST API-development",
     },
   };
@@ -46,6 +42,21 @@ function About({ menuOpen }) {
     "Next.js",
     "JavaScript",
     "TypeScript",
+    "PHP",
+  ];
+
+  const educationcourses = [
+    "HTML och CSS",
+    "JavaScript 3",
+    "JavaScript 1",
+    "Backend-utveckling 1",
+    "UX och UI",
+    "Backend-utveckling 2",
+    "Agila Projektmetoder",
+    "LIA",
+    "JavaScript 2",
+    ,
+    "Examensarbete",
   ];
 
   return (
@@ -66,7 +77,6 @@ function About({ menuOpen }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
             <div className="rounded-lg p-6 hover:translate-y-1 transition-all ">
               <h3 className="text-xl font-bold mb-2">Frontend</h3>
-              <h4 className="text-sm mb-5 font-medium ">{t.learning}</h4>
               <div className="flex flex-wrap gap-2">
                 {frontendSkills.map((tech, key) => (
                   <span
@@ -100,11 +110,21 @@ function About({ menuOpen }) {
                 {" "}
                 🎓 {t.education}
               </h3>
-              <ul className="text-center">
+              <ul className="text-center text-lg">
                 <li>
                   <strong>{t.school}</strong>
                 </li>
               </ul>
+              <h3 className=" text-center font-medium mt-5">
+                Detta är mina kurser jag har gått under min utbildnings tid!
+              </h3>
+              <div className="grid grid-cols-2 gap-1.5 mt-2.5">
+                {educationcourses.map((courses, key) => (
+                  <div className="text-center bg-red-500/10 text-red-500 py-1 rounded-xl p-2 hover:bg-red-500/20  mx-auto">
+                    {courses}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

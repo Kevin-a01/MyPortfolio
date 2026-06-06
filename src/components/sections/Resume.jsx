@@ -39,12 +39,12 @@ export function Resume({ menuOpen }) {
             </h2>
             <img
               onClick={() => setIsZoomed(!isZoomed)}
-              src="/MyPortfolio/Frontend_CV.jpg"
+              src="/MyPortfolio/fullstack_cv.jpg"
               alt=""
               className={`w-full h-1/2 mx-auto transition-transform duration-300 rounded-2xl ${isZoomed ? "scale-120 md:scale-135 " : "scale-100"}`}
             />
             <a
-              href="/MyPortfolio/Kevin_Andersson_Cv.pdf"
+              href="/MyPortfolio/Kevin_Andersson_cv.pdf"
               download
               className="flex justify-center mt-5 text-xl hover:text-red-400 text-gray-400 cursor-pointer w-fit mx-auto"
             >
