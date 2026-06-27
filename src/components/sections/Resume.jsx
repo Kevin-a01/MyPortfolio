@@ -11,11 +11,13 @@ export function Resume({ menuOpen }) {
       resumeTitle: "Kevin Andersson CV 💻",
       resumeDescription: "Här finns mitt CV att kolla genom och ladda ner! 🤝",
       resumeLink: "Länk till mitt CV 😊",
+      scroll: "Dra åt sidan för att se mer!",
     },
     en: {
       resumeTitle: "Kevin Andersson Resume 💻",
       resumeDescription: "Here is my Resume for you to view and download! 🤝",
       resumeLink: "Link to my Resume (In Swedish) 😊",
+      scroll: "Scroll to see more!",
     },
   };
 
@@ -24,9 +26,10 @@ export function Resume({ menuOpen }) {
   return (
     <section
       id="resume"
-      className={`flex items-center justify-center py-20 transition-all duration-500 ${menuOpen ? "opacity-10" : "opacity-100"}`}
+      className={`flex items-center justify-center py-20 transition-all duration-300 w-full shrink-0 ${menuOpen ? "opacity-10" : "opacity-100"}`}
     >
       <RevealOnScroll>
+        <h2 className="text-center text-xl md:hidden mb-5">{t.scroll}</h2>
         <div className="mx-auto px-4 w-full md:w-xl">
           <div
             className={`p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition`}

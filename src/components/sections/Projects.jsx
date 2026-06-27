@@ -29,6 +29,9 @@ function Projects({ menuOpen }) {
       featuredProjects: "Featured Projects",
       projectTitle: "FreakyFashion 1.0 / E-Commerce Website",
       projectTitle2: "EliteJewelry / E-Commerce Website",
+      projectTitle3: "Pawsisters Sales Tracker",
+      projectTitle4: "Pawsisters/FreakyFashion",
+      projectTitle5: "Pawsisters Simple Support Bot",
       projectDescription:
         "This is a e-commerce project I'm developing for one of my courses, JavaScript2 where we are learning React and buildning with it.",
       projectDescription2:
